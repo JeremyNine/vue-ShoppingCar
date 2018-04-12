@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block{
+    width: 100%;
+    height: 30px;
+    margin-top: 50px;
+}
+.title{
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 38px;
+    left: 577px;
+    background-color: white;
+}
+.shoplist{
+    height: 50px;
+    background-color: #505050;
+}
+.shoplist>ul>li{
+    list-style: none;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 200px;
+    color: white;
+}
+.shoplist>ul>li:nth-child(1){
+    width: 554px;
+}
+.detile{
+    height: 100px;
+}
+.detile>li{
+    list-style: none;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    width: 200px;
+    color: black;
+}
+.detile>li:nth-child(1){
+    width: 554px;
+}
+#money{
+    display: inline-block;
+    width: 40px;
+}
+ ul>li>button{
+    width: 30px;
+}
+.imgblock{
+    width:60px;
+    height:60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.imgblock>img{
+    width: 100%;
+    height: 100%;
+}
+.check{
+    width: 20px;
+    line-height: 60px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+.shopname{
+    width: 90px;
+    line-height: 30px;
+    float: left;
+    margin-top: 20px;
+    font-size: 10px;
+}
+.bottom{
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+#chenxk{
+    margin-left: 20px;
+}
+#all{
+    margin-left: 30px;
+}
+#fan{
+    margin-left: 30px;
+}
+#finish{
+    width: 200px;
+    text-align: center;
+    float: right;
+    background-color: red;
+    color: white;
+}
