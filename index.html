@@ -20,20 +20,20 @@
             <li>编辑</li>
         </ul>
     </div>
-    <div>
+    <div v-for="item in productList">
         <ul class="detile">
             <li>
                 <div class="check"><input type="checkbox"/></div>
                 <div class="imgblock">
-                    <img src="./img/1.jpg" alt=""/>
+                    <img v-bind:src="item.productImg" alt=""/>
                 </div>
                 <div class="shopname">
-                    <span>黄鹤楼香烟</span>
+                    <span>{{item.productName}}</span>
                 </div>
             </li>
-            <li>66</li>
-            <li><button>-</button><span id="money">0</span><button>+</button></li>
-            <li>0</li>
+            <li>{{item.productPrince}}</li>
+            <li><button>-</button><span id="money">{{item.productQuentity}}</span><button>+</button></li>
+            <li>{{item.productPrince*item.productQuentity}}</li>
             <li><button>del</button></li>
         </ul>
     </div>

@@ -1,0 +1,23 @@
+{
+  "status":1,
+  "result":{
+    "totalMoney":59,
+    "list":[
+      {
+        "productId":"001",
+        "productName":"香烟",
+        "productPrince":19,
+        "productQuentity":1,
+        "productImg":"./img/1.jpg"
+      },
+      {
+        "productId":"002",
+        "productName":"加多宝",
+        "productPrince":8,
+        "productQuentity":2,
+        "productImg":"./img/2.jpg"
+      }
+    ]
+  },
+  "message":""
+}
