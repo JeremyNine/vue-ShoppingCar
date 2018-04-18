@@ -31,9 +31,9 @@
                     <span>{{item.productName}}</span>
                 </div>
             </li>
-            <li>{{item.productPrince}}</li>
-            <li><button>-</button><span id="money">{{item.productQuentity}}</span><button>+</button></li>
-            <li>{{item.productPrince*item.productQuentity}}</li>
+            <li>{{item.productPrince | formateMoney}}</li>
+            <li><button v-on:click="changenum(item,-1)">-</button><span id="money">{{item.productQuentity}}</span><button v-on:click="changenum(item,1)">+</button></li>
+            <li>{{item.productPrince*item.productQuentity | formateMoney}}</li>
             <li><button>del</button></li>
         </ul>
     </div>

@@ -8,7 +8,9 @@ var cm =new Vue({
         productList:[]
     },
     filters:{
-
+        formateMoney:function(value){
+            return"$"+value.toFixed(2);
+        }
     },
     mounted: function (){
         this.cartview();
@@ -20,6 +22,17 @@ var cm =new Vue({
                 _this.productList=res.body.result.list;
                 _this.totleMoney=res.body.result.totleMoney;
             })
+        },
+        changenum:function(product,way){
+            if(way>0){
+                product.productQuentity++;
+            }
+            else{
+                product.productQuentity--;
+                if(product.productQuentity<1){
+                    product.productQuentity=1;
+                }
+            }
         }
     }
 });
